@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Newsletter</title>
+    <!-- link to Foundation for Emails.  Removing or changing this link will break this layout.
+    Learn more about Foundation for Emails and customizing their settings here - https://get.foundation/emails/docs/ -->
+    {% include_foundation_css %}
+    <style>
+      /*----------------------------------------------------------------------------------------
+       Override some of the 'Foundation for Emails' styles
+       -----------------------------------------------------------------------------------------*/
+      
+      /*------
+       COLORS
+      --------*/
+      /*To modify colors, replace all instances of the following hexadecimal color values as desired
+        If you're familiar with Foundation, the color variables in use are listed below*/
+        
+      /*$primary-color - Primary link color - #5721CC*/
+      /*$medium-gray - Footer text color - #6F7488*/
+      /*$gray-700 - Primary text color - #4B4B60*/
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        color: #4B4B60; }
+
+      small {
+        color: #6F7488; }
+      
+      a {
+        color: #5721CC; }
+        a:hover {
+          color: #331673; }
+        a:active {
+          color: #331673; }
+        a:visited {
+          color: #5721CC; }
+          
+      /*------------
+       FONT FAMILY
+      ------------*/
+      /*Replace all instances of "Helvetica Neue" with a font of your choice*/
+      body,
+      table.body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      td,
+      th,
+      a {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      
+      table.button table td a {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    
+      table.body { background-color: #F7F8FA; }
+      /*------------------------
+      End Foundation Overrides
+      ------------------------*/
+      
+      /*---------------------------------------------------------------------------------
+        Layout customizations - These styles are specific to this Newsletter layout only.
+      -----------------------------------------------------------------------------------*/
+      .container.outer-container {
+        background-color: #F7F8FA; }
+        
+      .container {
+        border-radius: 10px; }
+      
+      h1 {
+        font-weight: 700; }
+      
+      .footer p {
+        margin-bottom: 5px;
+        Margin-bottom: 5px; }
+      
+      .footer p.copyright {
+        font-style: italic; }
+      
+      .footer a {
+        color: #6F7488;
+        text-decoration: underline; }
+        .footer a:hover {
+          cursor: pointer;
+          color: #5721CC; }
+      
+      .social-icon {
+        width: 28px; 
+        margin-left: auto;
+      margin-right: auto; }
+    </style>
+    <!-- <style> -->
+  </head>
+  <body>
+    <span class="preheader"></span>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center data-parsed="">
+            <table align="center" class="container outer-container float-center"><tbody><tr><td>
+              <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+            
+              <table class="row"><tbody><tr>
+                <th class="small-12 large-12 columns first last"><table><tr><th>
+                  <center data-parsed="">
+                    <!-- To add your logo image, modify the src here. -->
+                    <img src="https://jmp.sh/s/bkCMJnP5mC2nN7IMqyGN" align="center" class="float-center">
+                  </center>
+                </th>
+<th class="expander"></th></tr></table></th>
+              </tr></tbody></table>
+            
+              <table class="spacer"><tbody><tr><td height="24px" style="font-size:24px;line-height:24px;">&#xA0;</td></tr></tbody></table> 
+            
+              <table align="center" class="container"><tbody><tr><td>
+            
+                <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+                
+                <table class="row"><tbody><tr>
+                  <th class="small-12 large-12 columns first last"><table><tr><th>
+                    <center data-parsed="">
+                      <h1 class="text-center float-center" align="center">Hello, from Customer.io!</h1>
+                    </center>
+                  </th>
+<th class="expander"></th></tr></table></th>
+                </tr></tbody></table>
+            
+                <table class="row"><tbody><tr>
+                  <th class="small-12 large-12 columns first last"><table><tr><th>
+                    <table class="wrapper" align="center"><tr><td class="wrapper-inner">
+                      <!-- We'll replace this content tag with whatever you write in your email -->
+                      {{content}}
+                    </td></tr></table>
+                  </th>
+<th class="expander"></th></tr></table></th>
+                </tr></tbody></table>
+            
+              </td></tr></tbody></table>
+            
+              <table class="row footer"><tbody><tr>
+                <th class="small-12 large-12 columns first last"><table><tr><th>
+            
+                  <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+            
+                  <center data-parsed="">
+                    <table align="center" class="menu float-center"><tr><td><table><tr>
+                      <!-- change all social icons by modifying the src and make sure to add link destinations by replacing href="#"-->
+                      <th class="menu-item float-center"><a href="#"><img src="http://userimg.customeriomail.com/twitter_at_2x.png" alt="Twitter" class="social-icon" width="28"></a></th>    
+                      <th class="menu-item float-center"><a href="#"><img src="http://userimg.customeriomail.com/facebook_at_2x.png" alt="Facebook" class="social-icon" width="28"></a></th>    
+                      <th class="menu-item float-center"><a href="#"><img src="http://userimg.customeriomail.com/linkedin_at_2x.png" alt="LinkedIn" class="social-icon" width="28"></a></th>    
+                      <th class="menu-item float-center"><a href="#"><img src="http://userimg.customeriomail.com/instagram_at_2x.png" alt="Instagram" class="social-icon" width="28"></a></th>    
+                    </tr></table></td></tr></table>      </center>
+            
+                  <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+            
+                  <!-- Your copyright -->
+                  <p class="text-center"><small>&copy;{{ "now" | date:"%Y" }} [[YOUR COMPANY NAME HERE]], All rights reserved.</small></p>
+                  <p class="text-center"><small>Catchy company tagline or attention grabbing statement.</small></p>
+            
+                  <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+            
+                  <center data-parsed="">
+                    <!--
+                      You can use the Customer.io unsubscribe link in all of your emails.
+                      We are able to track the unsubscribe to the specific email they
+                      unsubscribed from. You also have the option to include an unsubscribe
+                      link in your email header. You always have the option of whether to send 
+                      to unsubscribed users or not, but use that ability with caution. To learn more,
+                      or if you want to handle unsubscribes yourself, please refer to the docs:
+                      https://learn.customer.io/documentation/unsubscribes.html
+                    -->
+                    <!--to change the color of this link, find the COLORS section in the CSS overrides above! -->
+                    <a class="text-center untracked float-center" href="{% unsubscribe_url %}" align="center"><small>Unsubscribe from future emails like these.</small></a>
+                  </center>
+            
+                  <table class="spacer"><tbody><tr><td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td></tr></tbody></table> 
+            
+                  <center data-parsed="">
+                    <b class="text-center float-center" align="center"><small>You can find us here:</small></b>
+                  </center>
+                  <table class="spacer"><tbody><tr><td height="5px" style="font-size:5px;line-height:5px;">&#xA0;</td></tr></tbody></table> 
+                  <!-- Your address -->
+                  <p class="text-center"><small>[[YOUR ADDRESS HERE]]</small></p>
+                </th>
+<th class="expander"></th></tr></table></th>
+              </tr></tbody></table>
+            </td></tr></tbody></table>
+            
+          </center>
+        </td>
+      </tr>
+    </table>
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
